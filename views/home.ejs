@@ -1,0 +1,10 @@
+<%- include('partials/header') -%>
+<h1 style="color: blue;" >Home</h1>
+<p><%=para_1%></p>
+<% posts.forEach(function(element) { %>
+<h2 style="color: brown;"><%= element.name %></h2> 
+
+<p><%= element.blogs.substring(0,100)  %><span style="color: blue; font-size: large;"> ... </span><a href="/posts/<%= element.name%>">Read More</a></p> 
+
+<% }) %>
+<%- include('partials/footer') -%>
