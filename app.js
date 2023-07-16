@@ -15,9 +15,7 @@ const blogSchema=new mongoose.Schema({
 const Blog=mongoose.model("Items",blogSchema);
 const homeStartingContent = "A Simple Way to post your personal thoughts. Choose it to post your thoughts at the end of the day. Revisit them whenever you like.What are you waiting for? Click create and start writng.";
 const aboutContent = "A Simple Website built using Express, Javascript And Css. Used to Collaborate and Jot down your thoughts at the end of the day.";
-const contactContent = "Name: Shubhayu Shome 
-  Contact No.: +91 8697701811 
-  Email-id : shubhayushome123@gmail.com";
+const contactContent = "Name: Shubhayu Shome            Contact No.: +91 8697701811           Email-id : shubhayushome123@gmail.com";
 
 const app = express();
 app.set('view engine', 'ejs');
